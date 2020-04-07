@@ -1,20 +1,23 @@
 # dynu.com
 A package for debian based linux servers like ubuntu
 
+**Download the package**:
+`wget https://github.com/ztobs/dynu.com/raw/master/dynuiuc_2.6.2-3_amd64.deb`
+
 
 **Install the package**: 
-sudo dpkg -i dynuiuc_2.6.2-3_amd64.deb
+`sudo dpkg -i dynuiuc_2.6.2-3_amd64.deb`
 
 
 **Configure the script with your login credentials**: 
-sudo nano /etc/dynuiuc/dynuiuc.conf
+`sudo nano /etc/dynuiuc/dynuiuc.conf`
 
 
 **Open crontab**: 
-sudo crontab -e
+`sudo crontab -e`
 
 
 **add the following line to your crontab**: 
-dynuiuc -d -c /etc/dynuiuc/dynuiuc.conf
+`dynuiuc -d -c /etc/dynuiuc/dynuiuc.conf`
 
 it will run as a deamon 
